@@ -9,6 +9,11 @@
     [ # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
     ];
+  # git
+  programs.git.config = {
+  user.name = "WillyDoc";
+  user.email = "guillermoreyno@institutoclaret.cl";
+  };
   # Flatpak
 	services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
